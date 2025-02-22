@@ -6,6 +6,17 @@ This template is a lightweight Next.js project with Supabase Auth integration, s
 
 Clone this repository without Git history and install dependencies:
 
+#### Windows
+
+```sh
+git clone --depth=1 https://github.com/4fort/forts-nextjs-supabase-template.git
+rd /s /q forts-nextjs-supabase-template\.git
+cd forts-nextjs-supabase-template
+npm install
+```
+
+#### macOS & Linux
+
 ```sh
 git clone --depth=1 https://github.com/4fort/forts-nextjs-supabase-template.git
 rm -rf forts-nextjs-supabase-template/.git
