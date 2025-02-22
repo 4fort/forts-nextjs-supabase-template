@@ -7,7 +7,7 @@ This template is a lightweight Next.js project with Supabase Auth integration, s
 To quickly set up this template, use the CLI:
 
 ```sh
-npx fort-setup <./destination/project-name> | <project-name>
+npx fort-nextsb <./destination/project-name> | <project-name>
 ```
 
 This command will automatically scaffold the project in the specified destination.
