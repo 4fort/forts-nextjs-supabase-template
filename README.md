@@ -26,6 +26,21 @@ npm install
 
 Rename the project in `package.json` if needed.
 
+### Setting Up Supabase 🛠️
+
+Before running the project, you need to set up a Supabase project and configure the environment variables.
+
+1.  Go to [Supabase](https://supabase.com/) and create a new project.
+2.  Once the project is created, copy the **Supabase URL** and **Anon Key**.
+3.  Create a `.env.local` file in the root directory of your project and add the following:
+
+```sh
+NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-anon-key>
+```
+
+4.  Save the file and proceed to start the development server.
+
 ### Tech Stack 🛠️
 
 - **Next.js**
