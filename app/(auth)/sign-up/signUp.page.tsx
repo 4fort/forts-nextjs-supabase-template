@@ -25,6 +25,7 @@ import signUpFormSchema, {
   SignUpFormValuesType,
 } from "./_lib/signUpFormSchema";
 import handleSubmit from "./actions";
+import { Loader2 } from "lucide-react";
 
 export default function SignUpPage() {
   const form = useForm<SignUpFormValuesType>({
@@ -79,7 +80,14 @@ export default function SignUpPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={form.formState.isSubmitting}
+              >
+                {form.formState.isSubmitting && (
+                  <Loader2 className="size-6 animate-spin" />
+                )}
                 Sign Up
               </Button>
             </form>

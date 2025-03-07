@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/card";
 import handleSubmit from "./actions";
 import Link from "next/link";
+import { Loader2 } from "lucide-react";
 
 export default function LoginPage() {
   const form = useForm<LoginFormValuesType>({
@@ -32,6 +33,7 @@ export default function LoginPage() {
       password: "",
     },
   });
+
   return (
     <div className="flex flex-col gap-6">
       <Card>
@@ -85,7 +87,14 @@ export default function LoginPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={form.formState.isSubmitting}
+              >
+                {form.formState.isSubmitting && (
+                  <Loader2 className="size-6 animate-spin" />
+                )}
                 Login
               </Button>
             </form>
