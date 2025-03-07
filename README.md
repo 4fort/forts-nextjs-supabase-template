@@ -1,18 +1,18 @@
-## About This Template ✨
+# About This Template ✨
 
 This template is a lightweight Next.js project with Supabase Auth integration, styled with **shadcn/ui**.
 
-### Installation 🔧
+## Installation 🔧
 
 To quickly set up this template, use the CLI:
 
 ```sh
-npx fort-nextsb <./destination/project-name> | <project-name>
+npx 4fort@nextsb <./destination/project-name> | <project-name>
 ```
 
 This command will automatically scaffold the project in the specified destination.
 
-### Setting Up Supabase 🛠️
+## Setting Up Supabase 🛠️
 
 Before running the project, you need to set up a Supabase project and configure the environment variables.
 
@@ -28,26 +28,30 @@ Before running the project, you need to set up a Supabase project and configure 
 
 5. Save the file and proceed to start the development server.
 
-### Tech Stack 🛠️
+## Tech Stack 🛠️
 
 - **Next.js**
+
   ```sh
   npx create-next-app@latest
   ```
+
 - **Supabase SDK**
+
   ```sh
   npm install @supabase/supabase-js @supabase/ssr
   ```
+
 - **UI Components:** shadcn/ui
 - **Forms & Validation:** React Hook Form + Zod
 
-### Authentication 🔒
+## Authentication 🔒
 
 Supabase handles authentication on the server side, providing secure session management.
 
 Forms are built with **shadcn/ui**, validated using **Zod** and **React Hook Form**. Feel free to modify as needed.
 
-### Getting Started 🚀
+## Getting Started 🚀
 
 Run the development server:
 
@@ -63,7 +67,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Learn More 📚
+## Learn More 📚
 
 For more details, check out:
 
@@ -71,7 +75,7 @@ For more details, check out:
 - [Learn Next.js](https://nextjs.org/learn)
 - [Supabase Documentation](https://supabase.com/docs/guides)
 
-### Deployment 🌍
+## Deployment 🌍
 
 Deploy your Next.js app easily with [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
